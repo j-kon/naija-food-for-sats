@@ -8,23 +8,23 @@ const data = {
         {
             id: 1,
             img: img1,
-            title: 'Fufu',
+            title: 'Tuwo',
             desc: '',
-            price: 56,
+            price: 50,
         },
         {
             id: 2,
             img: img2,
             title: 'Amala',
             desc: '',
-            price: 52,
+            price: 54,
         },
         {
             id: 3,
             img: img3,
-            title: 'Tuwo',
+            title: 'Fufu',
             desc: '',
-            price: 50,
+            price: 56,
         }
     ],
 };
