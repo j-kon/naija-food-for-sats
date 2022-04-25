@@ -21,7 +21,7 @@ const packageDefinition = protoLoader.loadSync(
 );
 
 let m = fs.readFileSync(
-  "/Users/jaydroid/.polar/networks/1/volumes/lnd/bob/data/chain/bitcoin/regtest/admin.macaroon"
+  "/Users/jaydroid/.polar/networks/4/volumes/lnd/bob/data/chain/bitcoin/regtest/admin.macaroon"
 );
 let macaroon = m.toString("hex");
 
@@ -34,7 +34,7 @@ let macaroonCreds = grpc.credentials.createFromMetadataGenerator(
 );
 
 let lndCert = fs.readFileSync(
-  "/Users/jaydroid/.polar/networks/1/volumes/lnd/bob/tls.cert"
+  "/Users/jaydroid/.polar/networks/4/volumes/lnd/bob/tls.cert"
 );
 let sslCreds = grpc.credentials.createSsl(lndCert);
 let credentials = grpc.credentials.combineChannelCredentials(
