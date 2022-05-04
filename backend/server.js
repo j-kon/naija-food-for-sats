@@ -21,7 +21,7 @@ const packageDefinition = protoLoader.loadSync(
 );
 
 let m = fs.readFileSync(
-  "/Users/jaydroid/.polar/networks/4/volumes/lnd/bob/data/chain/bitcoin/regtest/admin.macaroon"
+  "/Users/jaydroid/.polar/networks/6/volumes/lnd/alice/data/chain/bitcoin/regtest/admin.macaroon"
 );
 let macaroon = m.toString("hex");
 
@@ -34,7 +34,7 @@ let macaroonCreds = grpc.credentials.createFromMetadataGenerator(
 );
 
 let lndCert = fs.readFileSync(
-  "/Users/jaydroid/.polar/networks/4/volumes/lnd/bob/tls.cert"
+  "/Users/jaydroid/.polar/networks/6/volumes/lnd/alice/tls.cert"
 );
 let sslCreds = grpc.credentials.createSsl(lndCert);
 let credentials = grpc.credentials.combineChannelCredentials(
@@ -44,7 +44,7 @@ let credentials = grpc.credentials.combineChannelCredentials(
 
 let lnrpcDescriptor = grpc.loadPackageDefinition(packageDefinition);
 let lnrpc = lnrpcDescriptor.lnrpc;
-let client = new lnrpc.Lightning("127.0.0.1:10002", credentials);
+let client = new lnrpc.Lightning("127.0.0.1:10001", credentials);
 
 server.get("/", (req, res) => {
   res.send("Hack me if you can");

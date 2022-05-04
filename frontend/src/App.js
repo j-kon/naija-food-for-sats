@@ -3,8 +3,8 @@ import "./App.css";
 
 const media = [
   {
-    name: "Amala",
-    price: 200,
+    name: "Tuwo",
+    price: 280,
     source: "img1.jpeg",
     invoice: "",
     paymentHash: "",
@@ -13,8 +13,8 @@ const media = [
     fileDownloadUrl: "",
   },
   {
-    name: "Fufu",
-    price: 200,
+    name: "Amala",
+    price: 300,
     source: "img2.jpeg",
     invoice: "",
     paymentHash: "",
@@ -23,8 +23,8 @@ const media = [
     fileDownloadUrl: "",
   },
   {
-    name: "Tuwo",
-    price: 1000,
+    name: "Fufu",
+    price: 350,
     source: "img3.jpeg",
     invoice: "",
     paymentHash: "",
@@ -69,7 +69,7 @@ function Media(props) {
               if (m.source === data.memo) {
                 return {
                   ...m,
-                  invoice: "THANK YOU",
+                  invoice: "THANKS FOR YOUR ORDER",
                   checkButton: true,
                   fileDownloadUrl: res,
                 };
@@ -97,13 +97,13 @@ function Media(props) {
           <div
             key={m.source}
             style={{
-              border: "3px solid red",
+              border: "3px solid blue",
               borderRadius: "5px",
               margin: "10px",
               padding: "10px",
               width: "350px",
               display: "inline-block",
-              height: "500px",
+              height: "550px",
               whiteSpace: "nowrap",
             }}
           >
@@ -117,6 +117,7 @@ function Media(props) {
               />
               <br />
               <button
+                className="btn btn-info ms-2"
                 disabled={m.buyButton}
                 style={{ padding: "10px", margin: "10px" }}
                 type="button"
@@ -127,6 +128,7 @@ function Media(props) {
                 Order Now
               </button>
               <button
+                className="btn btn-info ms-2"
                 disabled={m.checkButton}
                 style={{ padding: "10px", margin: "10px" }}
                 type="button"
