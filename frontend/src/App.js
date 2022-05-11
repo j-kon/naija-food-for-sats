@@ -136,7 +136,7 @@ function Media(props) {
                   checkInvoice(m.paymentHash);
                 }}
               >
-                Check Payment
+                Verify Payment
               </button>
               <br></br>
               <textarea
