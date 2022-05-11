@@ -1,7 +1,7 @@
 # stolit
 # Naija Food for sats
 
-This is an example media store powered by Lightning payments. The accompanying tutorial/guide can be found on [Medium](https://medium.com/)
+This is an example media store powered by Lightning payments. The accompanying tutorial/guide can be found on [Medium](https://medium.com/@jaykon/i-developed-a-meal-ordering-system-powered-by-lightning-cfd426bf0b78)
 
 ## Tools
 
@@ -22,7 +22,7 @@ Metadata for media is set in the `frontend/App.js` file.
 ### Express Server (backend)
 Run `node server.js` from the `backend` dir.
 
-### React Client (client)
+### React Frontend (frontend)
 Run `npm start` from the `frontend` dir.
 
 Open [http://localhost:3000](http://localhost:3000) to view in the browser.
