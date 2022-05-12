@@ -1,4 +1,3 @@
-# stolit
 # Naija Food for sats
 
 This is an example media store powered by Lightning payments. The accompanying tutorial/guide can be found on [Medium](https://medium.com/@jaykon/i-developed-a-meal-ordering-system-powered-by-lightning-cfd426bf0b78)
