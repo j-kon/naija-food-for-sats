@@ -1,10 +1,11 @@
 {
-  "name": "lapp-crash-course",
+  "name": "naija-food-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend for the Naija Food for sats demo",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "start:mock": "MOCK_LND=true node server.js"
   },
   "author": "Michael Rhee",
   "license": "MIT",

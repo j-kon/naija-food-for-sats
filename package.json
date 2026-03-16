@@ -1,0 +1,8 @@
+{
+  "name": "naija-food-for-sats",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.js",
+    "start:mock": "MOCK_LND=true node backend/server.js"
+  }
+}
